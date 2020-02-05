@@ -1,0 +1,21 @@
+.top-header_links {
+    ul {
+        &.nav {
+            background-color: #fff;
+            li {
+                &.list-item {
+                    height: 45px;
+                    flex: 33.33%;
+                    a {
+                        text-align: center;
+                        span {
+                            font-size: 16px;
+                            line-height: 45px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

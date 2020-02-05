@@ -1,0 +1,140 @@
+.credit-card-item_container {
+    padding: 5px 35px;
+    .credit-card-item_top_block {
+        margin-bottom: 25px;
+        .credit-card-item_title {
+            h3 {
+                font-size: 20px;
+                font-weight: 500;
+            }
+        }
+        .scrore_stars {
+            width: 76px;
+            height: 15px;
+            background-image: url(/assets/img/PNG/star.png);
+            margin-right: 10px;
+        }
+        .score-result_stars {
+            background-image: url(/assets/img/PNG/star_full.png);
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+    .credit-card-item_body {
+        margin-bottom: 10px;
+        .credit-card-item_body_left {
+            width: 37%;
+            max-width: 272px;
+            .credit-card-item-card-preview {
+                position: relative;
+                .credit-card-img {
+                    text-align: left;
+                }
+                .credit-card-approval {
+                    width: 100%;
+                    max-width: 100px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    height: 100%;
+                    text-align: center;
+                    i {
+                        bottom: 5px;
+                        top: auto;
+                    }
+                    span {
+                        position: relative;
+                        font-size: 15px;
+                        font-weight: 600;
+                        &.credit-card-approval-stat {
+                            display: block;
+                            height: 30px;
+                            margin-top: 15px;
+                            line-height: 30px;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+            .credit-card_body_bottom {
+                a {
+                    &.appl-now {
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+        }
+        .credit-card-item_body_right {
+            width: 100%;
+            max-width: 63%;
+            .credit-card-item-card-preview-describ {
+                p {
+                    font-size: 18px;
+                    margin-top: 0;
+                    padding-left: 15px;
+                    position: relative;
+                    margin-bottom: 18px;
+                }
+                .show-more {
+                    display: none;
+                }
+                &.show-less {
+                    .show-more {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .credit-card-item_bottom {
+        padding-top: 20px;
+        border-top: 1px solid #7F949C;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .credit-card-item_container {
+        padding: 5px 0;
+        .credit-card-item_top_block {
+            margin-bottom: 20px;
+        }
+        .credit-card-item_body {
+            margin-bottom: 10px;
+            padding-bottom: 80px;
+            position: relative;
+            .credit-card-item_body_left {
+                width: 37%;
+                max-width: 272px;
+                width: 100%;
+                max-width: 100%;
+                .credit-card-item-card-preview {
+                    position: relative;
+                    .credit-card-approval {
+                        width: 100%;
+                        max-width: 110px;
+                    }
+                }
+            }
+            .credit-card-item_body_right {
+                width: 100%;
+                max-width: 100%;
+                margin-top: 30px;
+            }
+            .credit-card_body_bottom {
+                position: absolute;
+                width: 100%;
+                bottom: 10px;
+                left: 0;
+                a {
+                    margin: 0;
+                }
+            }
+        }
+        .credit-card-item_bottom {
+            padding: 20px 15px 0;
+            margin: 0 -15px 10px -15px;
+        }
+    }
+}
